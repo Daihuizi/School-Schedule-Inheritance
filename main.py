@@ -1,5 +1,6 @@
 from school_schedule.student import Student
 from school_schedule.high_school_student import HighSchoolStudent
+from school_schedule.middle_school_student import MiddleSchoolStudent
 
 # first instance
 quinn = Student(
@@ -36,3 +37,7 @@ claire = HighSchoolStudent(
 students = [quinn, claire]
 for student in students:
     print(student.summary())
+
+
+daisy = MiddleSchoolStudent("daisy", "sophomore", ["English"], gets_transportation=True)
+print(daisy.summary())
